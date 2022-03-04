@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/byhelaman/huddle-landing-page-with-single-introductory-section
-- Live Site URL: 
+- Live Site URL: https://vigorous-goodall-32cb87.netlify.app
 
 ## My process
 
