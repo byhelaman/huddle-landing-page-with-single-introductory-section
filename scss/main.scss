@@ -1,0 +1,161 @@
+@use './base/reset';
+@use './utilities/variables';
+
+
+.home{
+    background-color: variables.$violet;
+    background-image: url(..//images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 2.25rem;
+    min-height: 100vh;
+    
+    @media (min-width: 62rem) {
+        background-image: url(..//images/bg-desktop.svg);
+        padding-top: 3.375rem;
+    }
+    
+    @media (min-width: 92rem) {
+        justify-content: center;
+    }
+    
+
+    &__header{
+        width: 100%;
+        max-width: 81rem;
+
+        &--logo{
+            width: 8rem;
+
+            @media (min-width: 75rem) {
+                width: 13.25rem;
+            }    
+        }
+    }
+
+    & .split{
+        width: 100%;
+        max-width: 81rem;
+        margin: 3.75rem 0 4rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.75rem;
+
+        @media (min-width: 75rem) {
+            flex-direction: row;
+            margin: 5.438rem 0 1.25rem;
+            align-items: flex-start;
+            gap: 3.375rem;
+        } 
+
+        & .text{
+            text-align: center;
+            max-width: 32rem;
+
+            @media (min-width: 75rem) {
+                margin-top: 2.688rem;
+                text-align: left;
+            } 
+
+            &__title{
+                margin: 0;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                font-weight: 600;
+
+                @media (min-width: 75rem) {
+                    font-size: 2.5rem;
+                    line-height: 3.75rem;
+                }          
+            }
+
+            &__paragraph{
+                margin: 0.75rem 0 1.5rem;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+
+                @media (min-width: 75rem) {
+                    margin: 1.25rem 0 1.5rem;
+                    font-size: 1.125rem;
+                    line-height: 1.688rem;
+                } 
+            }
+
+            &__button{
+                display: inline-block;
+                background: #fff;
+                color: variables.$violet;
+                text-decoration: none;
+                font-size: 0.75rem;
+                padding: 0.75rem 4.75rem 0.7rem;
+                border-radius: 50px ;
+                box-shadow: 0 5px 10px rgb( 0 0 0 / 20%);
+
+                &:hover{
+                    background: variables.$soft-magenta;
+                    color: #fff;
+                    transition: 0.5s;
+                }
+
+                @media (min-width: 75rem) {
+                    font-size: 1.125rem;
+                    padding: 0.82rem 4rem 1rem;
+                }
+            }
+        }
+    }
+
+    &__social-media{
+        width: 100%;
+        max-width: 80rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.625rem;
+
+        @media (min-width: 48.75rem) {
+            justify-content: right;
+        }
+
+        @media (min-width: 75rem) {
+            gap: 1rem;
+        }
+
+        & .icon{
+            color: #fff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 0.75rem;
+            text-decoration: none;
+            width: 1.75rem;
+            height: 1.75rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+
+            &:hover{
+                color: variables.$soft-magenta;
+                border: 1px solid variables.$soft-magenta;
+                transition: 0.5s;
+            }
+
+            @media (min-width: 75rem) {
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
