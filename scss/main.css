@@ -28,6 +28,7 @@ img {
 @media (min-width: 1024px) {
   .container {
     background: url(../../images/bg-desktop.svg) no-repeat;
+    background-size: contain;
     background-color: hsl(257deg, 40%, 49%);
     padding-top: calc(3.25rem + 2px);
   }
