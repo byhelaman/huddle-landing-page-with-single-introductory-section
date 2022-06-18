@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <script src="https://kit.fontawesome.com/580adcc296.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.css">
-    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
   </head>
 
   <body>
-    <main class="home">
-      <div class="home__header">
-        <img class="home__header--logo" src="./images/logo.svg" alt="logo">
-      </div>
-
-      <section class="split">
-        <div class="image">
-          <img src=".//images/illustration-mockups.svg" alt="illustration-mockup">
+    <main class="container">
+      <div class="hero">
+        <div class="hero__header">
+          <img src="./images/logo.svg" alt="logo huddle" />
         </div>
-
-        <div class="text">
-          <h1 class="text__title">Build The Community Your Fans Will Love</h1>
-          <p class="text__paragraph">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-          
-          <a class="text__button" href="#">Register</a>
+        <div class="hero__content">
+          <div class="hero__content--illustration">
+            <img
+              src="./images/illustration-mockups.svg"
+              alt="illustration mockups"
+            />
+          </div>
+          <div class="hero__content--text">
+            <h1>Build The Community Your Fans Will Love</h1>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <a href="#">Register</a>
+          </div>
         </div>
-      </section>
-
-      <div class="home__social-media">
-        <a class="icon" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-        <a class="icon" href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-        <a class="icon" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <div class="hero__social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
     </main>
+    <script
+      src="https://kit.fontawesome.com/580adcc296.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
